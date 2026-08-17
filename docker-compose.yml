@@ -1,0 +1,6 @@
+services:
+  disaster-relief-app:
+    build: .
+    container_name: disaster-relief-compose
+    ports:
+      - "8081:80"
