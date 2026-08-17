@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Disaster Relief Platform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Smart Disaster Relief Resource Coordination Platform</h1>
+    <p>Emergency Response Management</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Submit Emergency Request</h2>
+
+      <input type="text" id="name" placeholder="Citizen Name">
+      <input type="text" id="location" placeholder="Location">
+
+      <select id="severity">
+        <option value="">Select Severity</option>
+        <option value="Critical">Critical</option>
+        <option value="High">High</option>
+        <option value="Medium">Medium</option>
+        <option value="Low">Low</option>
+      </select>
+
+      <button onclick="submitRequest()">Submit Request</button>
+
+      <p id="message"></p>
+    </section>
+
+    <section class="card">
+      <h2>Available Resources</h2>
+
+      <ul>
+        <li>Rescue Teams: 6</li>
+        <li>Ambulances: 3</li>
+        <li>Food Packets: 320</li>
+        <li>Water Bottles: 450</li>
+        <li>Shelter Beds: 120</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
